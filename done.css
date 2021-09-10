@@ -1,0 +1,72 @@
+        body {
+            background: rgb(27, 66, 171);
+            background: radial-gradient(circle, #00bfa6, rgba(55, 170, 224, 1) 90%);
+        }
+        
+        p {
+            text-align: center;
+            font-size: 100px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 0;
+            margin-top: 50px;
+        }
+        
+        .glow {
+            font-size: 80px;
+            color: rgb(20, 1, 1);
+            text-align: center;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+        
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px rgb(3, 3, 3), 0 0 30px #130747, 0 0 40px #000fe6, 0 0 50px #0b0d0e, 0 0 60px #2f78e4, 0 0 70px #070607;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #120fa8, 0 0 40px #2ca8f0, 0 0 50px #121213, 0 0 60px #0a5572, 0 0 70px #08090c, 0 0 80px #050405;
+            }
+        }
+        
+        img {
+            margin-left: 550px;
+            width: 210px;
+            height: 190px;
+        }
+        
+        .noselect {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        button {
+            width: 160px;
+            height: 50px;
+            cursor: pointer;
+            border: none;
+            font-family: 'Comfortaa', cursive;
+            color: rgba(7, 0, 0, 0.5);
+            font-size: 35px;
+            border-radius: 4px;
+            box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.15);
+            background: rgb(2, 0, 36);
+            background: linear-gradient(45deg, rgba(2, 0, 36, 0) 5%, rgba(255, 255, 255, .5) 6%, rgba(255, 255, 255, 0) 9%, rgba(255, 255, 255, .5) 10%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, .5) 19%, rgba(255, 255, 255, 0) 21%);
+            background-size: 150%;
+            background-position: right;
+            transition: 1s;
+            margin-left: 370px;
+        }
+        
+        button:hover {
+            background-position: left;
+            color: rgb(39, 64, 175);
+            box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 1), 0px 0px 10px rgba(0, 0, 0, 0.25);
+        }
+        
+        button:focus {
+            outline: none;
+        }
